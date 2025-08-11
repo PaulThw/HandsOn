@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Allgemeine Farben für den dunklen Modus (schwarzer Hintergrund) */
+    --background: 0 0% 0%; /* Schwarz */
+    --foreground: 0 0% 98%; /* Fast Weiß */
+
+    --card: 240 10% 3.9%; /* Dunkelgrau für Karten */
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%; /* Dunkelgrau für Popover */
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%; /* Fast Weiß für primäre Elemente */
+    --primary-foreground: 240 5.9% 10%; /* Dunkelgrau für primären Text */
+
+    --secondary: 240 3.7% 15.9%; /* Dunkleres Grau für sekundäre Elemente */
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%; /* Dunkleres Grau für gedämpfte Elemente */
+    --muted-foreground: 240 5% 64.9%; /* Mittelgrau für gedämpften Text */
+
+    --accent: 240 3.7% 15.9%; /* Dunkleres Grau für Akzente */
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%; /* Dunkelrot für Warnungen */
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%; /* Dunkleres Grau für Ränder */
+    --input: 240 3.7% 15.9%; /* Dunkleres Grau für Eingabefelder */
+    --ring: 0 0% 98%; /* Fast Weiß für Fokus-Ringe */
+
+    --radius: 0.5rem;
+
+    /* Benutzerdefinierte Farben für GebärdenNow (dunkle Varianten) */
+    --petrol-50: 180 60% 15%;
+    --petrol-100: 180 60% 20%;
+    --petrol-200: 180 60% 25%;
+    --petrol-300: 180 60% 30%;
+    --petrol-400: 180 60% 35%;
+    --petrol-500: 180 60% 40%; /* Haupt-Petrol (dunkel) */
+    --petrol-600: 180 60% 45%;
+    --petrol-700: 180 60% 50%;
+    --petrol-800: 180 60% 55%;
+    --petrol-900: 180 60% 60%;
+
+    --apricot-50: 30 80% 15%;
+    --apricot-100: 30 80% 20%;
+    --apricot-200: 30 80% 25%;
+    --apricot-300: 30 80% 30%;
+    --apricot-400: 30 80% 35%;
+    --apricot-500: 30 80% 40%; /* Haupt-Apricot (dunkel) */
+    --apricot-600: 30 80% 45%;
+    --apricot-700: 30 80% 50%;
+    --apricot-800: 30 80% 55%;
+    --apricot-900: 30 80% 60%;
+
+    --blue-50: 210 80% 15%;
+    --blue-100: 210 80% 20%;
+    --blue-200: 210 80% 25%;
+    --blue-300: 210 80% 30%;
+    --blue-400: 210 80% 35%;
+    --blue-500: 210 80% 40%; /* Haupt-Blau (dunkel) */
+    --blue-600: 210 80% 45%;
+    --blue-700: 210 80% 50%;
+    --blue-800: 210 80% 55%;
+    --blue-900: 210 80% 60%;
+
+    --green-50: 120 60% 15%;
+    --green-100: 120 60% 20%;
+    --green-200: 120 60% 25%;
+    --green-300: 120 60% 30%;
+    --green-400: 120 60% 35%;
+    --green-500: 120 60% 40%; /* Haupt-Grün (dunkel) */
+    --green-600: 120 60% 45%;
+    --green-700: 120 60% 50%;
+    --green-800: 120 60% 55%;
+    --green-900: 120 60% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
